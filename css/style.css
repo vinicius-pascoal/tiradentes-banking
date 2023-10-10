@@ -22,22 +22,40 @@
 }
 
 .contentLogin .areaLogin .formularioLogin {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    left: -5rem;
+    color: white;
 }
 
 .contentLogin .areaLogin .formularioLogin input{
     background: rgb(113,113,113);
     background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(173,173,173,1) 100%);
+    padding: 1rem;
     border-radius: 20px;
     text-align: center;
-    color: white;
     font-weight: bold;
     border: none;
     box-shadow: 6px 6px 37px -11px rgba(0,0,0,0.31);
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.contentLogin .areaLogin .formularioLogin button {
+    background: rgb(113,113,113);
+    background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(173,173,173,1) 100%);
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    box-shadow: 6px 6px 37px -11px rgba(0,0,0,0.31);
+    width: fit-content;
+    margin-top: 1rem;
 }
 
 .contentLogin .areaLogin img {
