@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contentLogin {
+    display: flex;
+    height: 100vh;
+}
+
+.contentLogin div {
+    width: 50%;
+}
+
+
+.contentLogin .areaLogin {
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.contentLogin .areaLogin .formularioLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contentLogin .areaLogin .formularioLogin input{
+    background: rgb(113,113,113);
+    background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(173,173,173,1) 100%);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 6px 6px 37px -11px rgba(0,0,0,0.31);
+}
+
+.contentLogin .areaLogin img {
+    position: absolute;
+    height: 100vh;
+}
+
+.contentLogin .imglogin {
+    width: 100%;
+}
+
+.contentLogin .imglogin img {
+}
