@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contentLogin {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contentLogin :first-child{
+  width: 40%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contentLogin :last-child{
+  width: 60%;
+}
+
+.contentLogin .areaLogin {
+  background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.contentLogin .areaLogin .formularioLogin {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  left: -5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contentLogin .areaLogin .formularioLogin input{
+  background: rgb(113,113,113);
+  background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(173,173,173,1) 100%);
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  box-shadow: 6px 6px 37px -11px rgba(0,0,0,0.31);
+  width: fit-content;
+  margin-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentLogin .areaLogin .formularioLogin button {
+  background: rgb(113,113,113);
+  background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(173,173,173,1) 100%);
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  box-shadow: 6px 6px 37px -11px rgba(0,0,0,0.31);
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.contentLogin .areaLogin img {
+  position: absolute;
+  height: 100vh;
+  width: fit-content;
+}
+
+.contentLogin .imgLogin img {
+  width: 100%;
+  height: 100vh;
 }
