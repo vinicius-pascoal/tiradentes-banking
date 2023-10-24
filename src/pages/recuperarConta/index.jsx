@@ -1,17 +1,14 @@
 import BaseLogin from "../../assets/components/baseLogin";
 
-function CriarConta() {
+export default function RecuperarConta() {
   return (
     <>
       <BaseLogin>
         <form className="formularioLogin">
           <input type="text" placeholder="insira seu CPF" />
-          <input type="text" placeholder="insira sua senha" />
-          <button>criar conta</button>
+          <button>recuperar senha</button>
         </form>
       </BaseLogin>
     </>
   );
 }
-
-export default CriarConta;

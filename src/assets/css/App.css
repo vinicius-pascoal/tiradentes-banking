@@ -58,6 +58,17 @@
   margin-top: 1rem;
 }
 
+.contentLogin .areaLogin .formularioLogin .loginLinks {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentLogin .areaLogin .formularioLogin .loginLinks a {
+  color: white;
+  text-decoration: none;
+}
+
 .contentLogin .areaLogin img {
   position: absolute;
   height: 100vh;

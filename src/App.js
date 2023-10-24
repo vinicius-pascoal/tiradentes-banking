@@ -1,6 +1,8 @@
-import Login from './pages/login'
+import Login from './pages/login';
+import CriarConta from './pages/criarConta';
+import RecuperarConta from './pages/recuperarConta'
 
-import './assets/css/App.css';
+import './assets/css/App.css'
 import {
   BrowserRouter as Router,
   Navigate,
@@ -15,6 +17,8 @@ function App() {
         <userProvider>
           <Routes>
             <Route path='/' element={<Login/>}/>
+            <Route path='/criarConta' element={<CriarConta/>}/>
+            <Route path='/recuperarConta' element={<RecuperarConta/>}/>
           </Routes>
         </userProvider>
       </Router>
