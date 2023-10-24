@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const goTo = useNavigate();
   const database = [
@@ -34,7 +33,6 @@ function Login() {
       if (userData.password !== pass.value) {
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
-        setIsSubmitted(true);
         goTo("/dashboard", { replace: true });
       }
     } else {
@@ -51,9 +49,9 @@ function Login() {
     <>
       <BaseLogin>
         <form className="formularioLogin" onSubmit={handleSubmit}>
-          <input type="text" name="uname" required />
+          <input type="text" name="uname" placeholder="Usuario" />
           {renderErrorMessage("uname")}
-          <input type="password" name="pass" required />
+          <input type="password" name="pass" placeholder="Senha" />
           {renderErrorMessage("pass")}
           <button type="submit">Login</button>
           <div className="loginLinks">
