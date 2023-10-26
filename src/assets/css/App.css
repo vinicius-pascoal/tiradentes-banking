@@ -79,3 +79,16 @@
   width: 100%;
   height: 100vh;
 }
+
+/* NAVBAR */
+.container-fluid{
+  text-align: center !important;
+  align-items: center !important;
+  font-family: 'Neo Sans Pro Bold';
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro Bold';
+  src: local('Neo Sans Pro Bold'), url('../fonts/Neo\ Sans\ Pro\ Bold.ttf') format('ttf');
+  
+}
