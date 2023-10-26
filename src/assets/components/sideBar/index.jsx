@@ -5,17 +5,21 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 export default function Sidebar() {
   return (
     <div className="sideBarFundo col-auto min-vh-100 d-flex flex-column align-items-center">
-      <a className="text-decoration-none text-white d-flex align-items-center">
+      <div className="text-decoration-none text-white d-flex align-items-center">
         <img
           src={logo}
           alt="Logo"
-          className="img-fluid"
+          className="img-fluid logoNav"
           style={{ maxWidth: "100px" }}
         />
-      </a>
+      </div>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item text-white fs-4 d-flex align-items-center">
-          <a href="#" class="nav-link text-white fs-5" aria-current="page">
+          <a
+            href="/dashboard"
+            class="nav-link text-white fs-5"
+            aria-current="page"
+          >
             <i className="fs-4 bi bi-house"></i>
             <span className="ms-2">Dashboard</span>
           </a>
