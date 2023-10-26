@@ -2,7 +2,6 @@ import Login from './pages/login';
 import CriarConta from './pages/criarConta';
 import RecuperarConta from './pages/recuperarConta'
 import Dashboard from './pages/dashboard'
-import BaseSite from './assets/components/baseSite';
 
 import './assets/css/App.css'
 import {
@@ -21,12 +20,8 @@ function App() {
             <Route path='/' element={<Login/>}/>
             <Route path='/criarConta' element={<CriarConta/>}/>
             <Route path='/recuperarConta' element={<RecuperarConta/>}/>
+            <Route path='/dashboard' element={<Dashboard/>}/>
           </Routes>
-          <BaseSite>
-            <Routes>
-              <Route path='/dashboard' element={<Dashboard/>}/>
-            </Routes>
-          </BaseSite>
         </userProvider>
       </Router>
       

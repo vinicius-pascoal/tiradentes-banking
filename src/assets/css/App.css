@@ -92,19 +92,3 @@
   src: local('Neo Sans Pro Bold'), url('../fonts/Neo\ Sans\ Pro\ Bold.ttf') format('ttf');
   
 }
-
-.sideBarFundo{
-  background-color: #292e7f;
-}
-
-.fundoSite{
-  display: flex;
-  margin-right: 0 !important;
-}
-
-.fundoImg{
-  background-image: url(../imgs/home/fundo.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: cover;
-}
