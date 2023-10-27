@@ -40,7 +40,9 @@ const Sac = () => {
   ]);
 
   return (
+    
     <div class="titulo">
+      <img src="imagem_SAC" alt="Descrição da imagem" />
       <h1>PERGUNTAS FREQUENTES</h1>
       {items.map((item) => (
         <Accordion key={item.title} title={item.title} conteudo = {item.content} />
