@@ -4,7 +4,7 @@ const Accordion = ({conteudo,title}) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div>
+    <div className="accordion">
       <button onClick={() => setIsExpanded(!isExpanded)}>
       <h2>{title}</h2>
       </button>
