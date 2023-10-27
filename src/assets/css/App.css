@@ -88,13 +88,13 @@
 }
 
 .accordion button{
-  background-color: rgb(196, 196, 196);
+  background-color: rgba(0,212,255);
   padding: 2rem;
   border: none;
 }
 
 .accordion div {
-  background-color: rgb(153, 152, 152);
+  background-color: rgb(19, 2, 168);
   padding: 3rem;
 }
 .titulo{
