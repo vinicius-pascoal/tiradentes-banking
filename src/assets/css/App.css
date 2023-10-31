@@ -105,3 +105,33 @@
   background: rgb(8,140,167);
   background: linear-gradient(180deg, rgba(8,140,167,1) 0%, rgba(11,11,34,1) 59%);
 }
+=======
+/* NAVBAR */
+.container-fluid{
+  text-align: center !important;
+  align-items: center !important;
+  font-family: 'Neo Sans Pro Bold';
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro Bold';
+  src: local('Neo Sans Pro Bold'), url('../fonts/Neo\ Sans\ Pro\ Bold.ttf') format('ttf');
+  
+}
+
+.sideBarFundo{
+  background-color: #292e7f;
+}
+
+.fundoSite{
+  display: flex;
+  margin-right: 0 !important;
+}
+
+.fundoImg{
+  background-image: url(../imgs/home/fundo.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
