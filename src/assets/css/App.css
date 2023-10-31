@@ -88,18 +88,23 @@
 }
 
 .accordion button{
-  background: white;
-  color: gray;
+  background: rgb(41,46,127);
+  color: white;
   padding: 2rem;
   border-radius: 20px;
+  border: none;
+  box-shadow: 6px 6px 14px -7px rgba(0,0,0,0.63);
 }
 
 .accordion div {
   color: white;
-  background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(173,173,173,1) 100%);
+  background: rgb(41,46,127);
+  background: linear-gradient(0deg, rgba(41,46,127,1) 0%, rgba(56,62,158,1) 99%);
   padding: 3rem;
   border-radius: 20px;
+  border: none;
 }
+
 .Sac{
   text-align: center;
   overflow-y: scroll;
