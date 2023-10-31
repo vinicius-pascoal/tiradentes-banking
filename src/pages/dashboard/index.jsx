@@ -3,5 +3,6 @@ export default function Dashboard() {
     <div>
       <h1>isso e uma dashboard</h1>
     </div>
+
   );
 }

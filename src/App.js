@@ -3,6 +3,7 @@ import CriarConta from './pages/criarConta';
 import RecuperarConta from './pages/recuperarConta'
 import Dashboard from './pages/dashboard'
 import BaseSite from './assets/components/baseSite';
+import Sac from './pages/sac';
 
 import './assets/css/App.css'
 import {
@@ -25,6 +26,7 @@ function App() {
           <BaseSite>
             <Routes>
               <Route path='/dashboard' element={<Dashboard/>}/>
+               <Route path='/sac' element={<Sac/>}/>
             </Routes>
           </BaseSite>
         </userProvider>

@@ -15,6 +15,10 @@ function Login() {
       username: "user2",
       password: "pass2",
     },
+    {
+      username: "user3",
+      password: "pass3",
+    },
   ];
 
   const errors = {
