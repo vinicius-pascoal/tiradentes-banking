@@ -50,7 +50,7 @@ export default function Sidebar() {
           </a>
         </li>
         <li class="nav-item text-white fs-4 d-flex align-items-center">
-          <a href="#" class="nav-link text-white fs-5" aria-current="page">
+          <a href="/sac" class="nav-link text-white fs-5" aria-current="page">
             <i className="fs-4 bi bi-headset"></i>
             <span className="ms-2">Suporte</span>
           </a>

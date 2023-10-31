@@ -100,12 +100,12 @@
   padding: 3rem;
   border-radius: 20px;
 }
-.titulo{
+.Sac{
   text-align: center;
-  background: rgb(8,140,167);
-  background: linear-gradient(180deg, rgba(8,140,167,1) 0%, rgba(11,11,34,1) 59%);
+  overflow-y: scroll;
+  height: 100vh;
 }
-=======
+
 /* NAVBAR */
 .container-fluid{
   text-align: center !important;
@@ -134,4 +134,3 @@
   width: 100%;
   background-size: cover;
 }
-
