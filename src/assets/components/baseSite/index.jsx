@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Sidebar from "../sideBar";
 
 export default function BaseSite({ children }) {
@@ -8,3 +9,7 @@ export default function BaseSite({ children }) {
     </div>
   );
 }
+
+BaseSite.propTypes = {
+  children: PropTypes.node,
+};

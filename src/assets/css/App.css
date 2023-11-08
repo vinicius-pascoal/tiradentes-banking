@@ -8,17 +8,21 @@
   display: flex;
 }
 
-.contentLogin :first-child{
+.contentLogin :first-child {
   width: 40%;
 }
 
-.contentLogin :last-child{
+.contentLogin :last-child {
   width: 60%;
 }
 
 .contentLogin .areaLogin {
-  background: rgb(2,0,36);
-  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .contentLogin .areaLogin .formularioLogin {
@@ -32,28 +36,36 @@
   color: white;
 }
 
-.contentLogin .areaLogin .formularioLogin input{
-  background: rgb(113,113,113);
-  background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(173,173,173,1) 100%);
+.contentLogin .areaLogin .formularioLogin input {
+  background: rgb(113, 113, 113);
+  background: linear-gradient(
+    90deg,
+    rgba(113, 113, 113, 1) 0%,
+    rgba(173, 173, 173, 1) 100%
+  );
   padding: 1rem;
   border-radius: 20px;
   text-align: center;
   font-weight: bold;
   border: none;
-  box-shadow: 6px 6px 37px -11px rgba(0,0,0,0.31);
+  box-shadow: 6px 6px 37px -11px rgba(0, 0, 0, 0.31);
   width: fit-content;
   margin-top: 1rem;
 }
 
 .contentLogin .areaLogin .formularioLogin button {
-  background: rgb(113,113,113);
-  background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(173,173,173,1) 100%);
+  background: rgb(113, 113, 113);
+  background: linear-gradient(
+    90deg,
+    rgba(113, 113, 113, 1) 0%,
+    rgba(173, 173, 173, 1) 100%
+  );
   padding: 1rem;
   border-radius: 20px;
   text-align: center;
   font-weight: bold;
   border: none;
-  box-shadow: 6px 6px 37px -11px rgba(0,0,0,0.31);
+  box-shadow: 6px 6px 37px -11px rgba(0, 0, 0, 0.31);
   width: fit-content;
   margin-top: 1rem;
 }
@@ -80,60 +92,64 @@
   height: 100vh;
 }
 
-.accordion{
+.accordion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 5rem 2rem;
 }
 
-.accordion button{
-  background: rgb(41,46,127);
+.accordion button {
+  background: rgb(41, 46, 127);
   color: white;
   padding: 2rem;
   border-radius: 20px;
   border: none;
-  box-shadow: 6px 6px 14px -7px rgba(0,0,0,0.63);
+  box-shadow: 6px 6px 14px -7px rgba(0, 0, 0, 0.63);
 }
 
 .accordion div {
   color: white;
-  background: rgb(41,46,127);
-  background: linear-gradient(0deg, rgba(41,46,127,1) 0%, rgba(56,62,158,1) 99%);
+  background: rgb(41, 46, 127);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 46, 127, 1) 0%,
+    rgba(56, 62, 158, 1) 99%
+  );
   padding: 3rem;
   border-radius: 20px;
   border: none;
 }
 
-.Sac{
+.Sac {
   text-align: center;
   overflow-y: scroll;
   height: 100vh;
 }
 
 /* NAVBAR */
-.container-fluid{
+.container-fluid {
   text-align: center !important;
   align-items: center !important;
-  font-family: 'Neo Sans Pro Bold';
+  font-family: "Neo Sans Pro Bold", sans-serif;
 }
 
 @font-face {
-  font-family: 'Neo Sans Pro Bold';
-  src: local('Neo Sans Pro Bold'), url('../fonts/Neo\ Sans\ Pro\ Bold.ttf') format('ttf');
-  
+  font-family: "Neo Sans Pro Bold";
+  src: local("Neo Sans Pro Bold"),
+    url("../fonts/Neo\ Sans\ Pro\ Bold.ttf") format("ttf");
 }
 
-.sideBarFundo{
+.sideBarFundo {
   background-color: #292e7f;
 }
 
-.fundoSite{
+.fundoSite {
   display: flex;
   margin-right: 0 !important;
 }
 
-.fundoImg{
+.fundoImg {
   background-image: url(../imgs/home/fundo.png);
   background-repeat: no-repeat;
   width: 100%;
