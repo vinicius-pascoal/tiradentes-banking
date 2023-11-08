@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 
-const Accordion = ({conteudo,title}) => {
+import PropTypes from 'prop-types';
+
+const Accordion = ({ conteudo, title }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className="accordion">
       <button onClick={() => setIsExpanded(!isExpanded)}>
-      <h2>{title}</h2>
+        <h2>{title}</h2>
       </button>
       <div style={isExpanded ? { display: "block" } : { display: "none" }}>
         <p>{conteudo}</p>
@@ -15,4 +17,9 @@ const Accordion = ({conteudo,title}) => {
   );
 };
 
-export default Accordion ;
+Accordion.propTypes = {
+  conteudo: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+export default Accordion;

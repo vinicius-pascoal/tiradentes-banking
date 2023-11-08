@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Accordion from "../../assets/components/accordion";
 
 const Sac = () => {
-  const [items, setItems] = useState([
+  const items = [
     {
       title: "O que é um banco digital?",
       content:
@@ -47,10 +47,10 @@ const Sac = () => {
       content:
         "Você pode entrar em contato com nosso serviço de atendimento ao cliente do Tiradentes Finance ligando para nosso número de suporte, que está disponível de segunda a sexta-feira, das 8h às 20h, e aos sábados das 9h às 13h. Nossos representantes terão prazer em ajudar com qualquer dúvida ou preocupação que você possa ter. Além disso, você pode enviar um e-mail para o nosso serviço de atendimento ao cliente a qualquer momento e receberá uma resposta o mais breve possível, garantindo um suporte abrangente para os alunos universitários em todas as etapas de sua jornada financeira.",
     },
-  ]);
+  ];
 
   return (
-    <div class="Sac">
+    <div className="Sac">
       <h1>PERGUNTAS FREQUENTES</h1>
       {items.map((item) => (
         <Accordion
