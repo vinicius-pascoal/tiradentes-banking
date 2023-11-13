@@ -34,7 +34,7 @@ export default function Sidebar() {
           </Link>
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link to="#" className="nav-link text-white fs-5" aria-current="page">
+          <Link to="/academico" className="nav-link text-white fs-5" aria-current="page">
             <i className="fs-4 bi bi-mortarboard"></i>
             <span className="ms-2">Acadêmico</span>
           </Link>
@@ -46,7 +46,7 @@ export default function Sidebar() {
           </Link>
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link to="#" className="nav-link text-white fs-5" aria-current="page">
+          <Link to="/movimentacoes" className="nav-link text-white fs-5" aria-current="page">
             <i className="fs-4 bi bi-arrows-expand"></i>
             <span className="ms-2">Movimentações</span>
           </Link>
