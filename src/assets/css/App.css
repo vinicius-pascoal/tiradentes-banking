@@ -186,3 +186,7 @@
   background-color: #292e7f;
   color: white;
 }
+
+.fundoCartao {
+  background-image: url(../imgs/dashboard/cardBackground.jpg);
+}
