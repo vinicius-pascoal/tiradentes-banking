@@ -47,7 +47,7 @@ export default function Dashboard() {
             <div className=" mt-20 flex justify-between">
               <div className="flex justify-between">
                 <div className="w-10 h-10">
-                  <ModalPix />
+                  <ModalPix tipo={"cartao"} />
                 </div>
                 <div className="w-10 h-10 justify-center flex ">
                   <Link
@@ -59,7 +59,7 @@ export default function Dashboard() {
                   </Link>
                 </div>
                 <div className="w-10 h-10 ">
-                  <ModalTed />
+                  <ModalTed tipo={"cartao"} />
                 </div>
               </div>
               <div className="ml-2">

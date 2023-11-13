@@ -5,7 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import ModalPixPagamentos from "../modalPixPagamentos";
 import ModalPixReceber from "../modalPixReceber";
 
-export default function modalPix({ children }) {
+export default function modalPix({ tipo }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,10 +13,18 @@ export default function modalPix({ children }) {
 
   return (
     <>
-      <Button variant="" onClick={handleShow}>
-        <i className="fs-4 bi bi-x-diamond-fill"></i>
-        {children ? { children } : ""}
-      </Button>
+      {tipo === "cartao" ? (
+        <Button variant="" onClick={handleShow}>
+          <i className="fs-4 bi bi-x-diamond-fill"></i>
+        </Button>
+      ) : (
+        <li className="nav-item text-white fs-4 d-flex align-items-center">
+          <Button className=" text-white" variant="" onClick={handleShow}>
+            <i className="fs-4 bi bi-x-diamond-fill"></i>
+            <span className="ms-2">Pix</span>
+          </Button>
+        </li>
+      )}
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

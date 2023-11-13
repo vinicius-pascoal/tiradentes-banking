@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-export default function Example() {
+export default function Example({ tipo }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,9 +11,16 @@ export default function Example() {
 
   return (
     <>
-      <Button variant="" onClick={handleShow}>
-        <i className="fs-4 bi bi-credit-card"></i>
-      </Button>
+      {tipo === "cartao" ? (
+        <Button variant="" onClick={handleShow}>
+          <i className="fs-4 bi bi-credit-card"></i>
+        </Button>
+      ) : (
+        <Button className=" text-white" variant="" onClick={handleShow}>
+          <i className="fs-4 bi bi-credit-card"></i>
+          <span className="ms-2">Cartão</span>
+        </Button>
+      )}
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
