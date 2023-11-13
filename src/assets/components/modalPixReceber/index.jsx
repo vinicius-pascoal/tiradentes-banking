@@ -2,10 +2,10 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import ModalPixPagamentos from "../modalPixPagamentos";
-import ModalPixReceber from "../modalPixReceber";
 
-export default function modalPix({ children }) {
+import pixQrCode from "../../imgs/dashboard/pixQrCode.png";
+
+export default function modalPixReceber({ children }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,18 +13,25 @@ export default function modalPix({ children }) {
 
   return (
     <>
-      <Button variant="" onClick={handleShow}>
-        <i className="fs-4 bi bi-x-diamond-fill"></i>
-        {children ? { children } : ""}
+      <Button variant="primary" onClick={handleShow}>
+        Receber
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Pix</Modal.Title>
         </Modal.Header>
-        <Modal.Body className="flex justify-around">
-          <ModalPixPagamentos />
-          <ModalPixReceber />
+        <Modal.Body>
+          <Form>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>valor</Form.Label>
+              <Form.Control type="text" autoFocus />
+            </Form.Group>
+          </Form>
+          <img src={pixQrCode} alt="qrcode" srcset="" />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
