@@ -21,10 +21,18 @@ export default function Dashboard() {
             <div>
               <div className="flex justify-between">
                 <div>
-                  <span>Limite disponivel</span>
+                  <span className="font-bold">Saldo </span>
                 </div>
                 <div>
-                  <span>R$ 600,00</span>
+                  <span className="font-bold text-indigo-500">R$ 1600,00</span>
+                </div>
+              </div>
+              <div className="flex justify-between">
+                <div>
+                  <span className="font-bold">Limite disponivel</span>
+                </div>
+                <div>
+                  <span className="font-bold text-indigo-500">R$ 600,00</span>
                 </div>
               </div>
               <div className="flex justify-between">
@@ -38,10 +46,10 @@ export default function Dashboard() {
             </div>
             <div className="flex justify-between">
               <div className="flex justify-between">
-                <div>
+                <div className="w-10 h-10">
                   <ModalPix />
                 </div>
-                <div>
+                <div className="w-10 h-10 justify-center flex ">
                   <Link
                     to="/movimentacoes"
                     className="nav-link"
@@ -50,7 +58,7 @@ export default function Dashboard() {
                     <i className="fs-4 bi bi-arrows-expand"></i>
                   </Link>
                 </div>
-                <div>
+                <div className="w-10 h-10 ">
                   <ModalTed />
                 </div>
               </div>
