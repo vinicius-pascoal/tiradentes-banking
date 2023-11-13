@@ -28,7 +28,7 @@ function App() {
             <Route path="/criarConta" element={<CriarConta />} />
             <Route path="/recuperarConta" element={<RecuperarConta />} />
           </Routes>
-          {logged || true ? (
+          {logged ? (
             <BaseSite>
               <Routes>
                 <Route path="/dashboard" element={<Dashboard />} />

@@ -4,6 +4,9 @@ import logo from "../../imgs/dashboard/Logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+import ModalPix from "../modalPix";
+import ModalTed from "../modalTed";
+
 export default function Sidebar() {
   return (
     <div className="sideBarFundo col-auto min-vh-100 d-flex flex-column align-items-center">
@@ -28,31 +31,37 @@ export default function Sidebar() {
         </li>
 
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link to="#" className="nav-link text-white fs-5" aria-current="page">
-            <i className="fs-4 bi bi-credit-card"></i>
-            <span className="ms-2">Cartão</span>
-          </Link>
+          <ModalTed />
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link to="/academico" className="nav-link text-white fs-5" aria-current="page">
+          <Link
+            to="/academico"
+            className="nav-link text-white fs-5"
+            aria-current="page"
+          >
             <i className="fs-4 bi bi-mortarboard"></i>
             <span className="ms-2">Acadêmico</span>
           </Link>
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link to="#" className="nav-link text-white fs-5" aria-current="page">
-            <i className="fs-4 bi bi-x-diamond-fill"></i>
-            <span className="ms-2">Pix</span>
-          </Link>
+          <ModalPix />
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link to="/movimentacoes" className="nav-link text-white fs-5" aria-current="page">
+          <Link
+            to="/movimentacoes"
+            className="nav-link text-white fs-5"
+            aria-current="page"
+          >
             <i className="fs-4 bi bi-arrows-expand"></i>
             <span className="ms-2">Movimentações</span>
           </Link>
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link to="/sac" className="nav-link text-white fs-5" aria-current="page">
+          <Link
+            to="/sac"
+            className="nav-link text-white fs-5"
+            aria-current="page"
+          >
             <i className="fs-4 bi bi-headset"></i>
             <span className="ms-2">Suporte</span>
           </Link>
