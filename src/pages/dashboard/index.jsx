@@ -7,17 +7,17 @@ import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   return (
-    <div className="flex justify-around mt-56">
+    <div className="flex justify-center mt-56">
       <CreditCard />
-      <div className="flex bg-white p-4 rounded-md w-max">
+      <div className="flex bg-white p-4 rounded-xl w-auto mx-28">
         <div>
           <h1>Meu Cartão</h1>
           <div>
             <CircularProgress progress={68} />
           </div>
         </div>
-        <div className="flex-col flex justify-center">
-          <div className="flex justify-between flex-col">
+        <div className="flex-col flex justify-around">
+          <div className="ml-28 flex justify-between flex-col">
             <div>
               <div className="flex justify-between">
                 <div>
@@ -44,7 +44,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between">
+            <div className=" mt-20 flex justify-between">
               <div className="flex justify-between">
                 <div className="w-10 h-10">
                   <ModalPix />
