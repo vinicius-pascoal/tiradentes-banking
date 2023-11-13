@@ -9,12 +9,14 @@ export default function Dashboard() {
   return (
     <div className="flex justify-around mt-56">
       <CreditCard />
-      <div className="flex-col fle justify-between bg-white p-4 rounded-md w-max">
-        <h1>Meu Cartão</h1>
+      <div className="flex bg-white p-4 rounded-md w-max">
         <div>
-          <CircularProgress progress={68} />
+          <h1>Meu Cartão</h1>
+          <div>
+            <CircularProgress progress={68} />
+          </div>
         </div>
-        <div className="flex-col flex justify-between">
+        <div className="flex-col flex justify-center">
           <div className="flex justify-between flex-col">
             <div>
               <div className="flex justify-between">
@@ -50,38 +52,6 @@ export default function Dashboard() {
                 </div>
                 <div>
                   <ModalTed />
-                </div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                    />
-                  </svg>
                 </div>
               </div>
               <div className="ml-2">
