@@ -17,6 +17,9 @@ const CreditCard = ({
       <div className="absolute top-4 left-4 text-white text-lg font-medium">
         {showValues ? number : "0000 0000 0000 0000"}
       </div>
+      <div className="absolute bottom-10 left-4 text-white text-sm">
+        <h6>Vinicius maynard</h6>
+      </div>
       <div className="absolute bottom-4 left-4 text-white text-sm">
         {showValues ? expiration : "01/29"}
       </div>

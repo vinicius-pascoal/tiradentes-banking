@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-export default function modalPix() {
+export default function modalPix({ children }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,6 +13,7 @@ export default function modalPix() {
     <>
       <Button variant="" onClick={handleShow}>
         <i className="fs-4 bi bi-x-diamond-fill"></i>
+        {children ? { children } : ""}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
