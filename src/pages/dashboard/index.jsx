@@ -21,7 +21,7 @@ export default function Dashboard() {
             <div>
               <div className="flex justify-between">
                 <div>
-                  <span className="font-bold">Saldo </span>
+                  <span className="font-bold">Saldo</span>
                 </div>
                 <div>
                   <span className="font-bold text-indigo-500">R$ 1600,00</span>
@@ -29,7 +29,7 @@ export default function Dashboard() {
               </div>
               <div className="flex justify-between">
                 <div>
-                  <span className="font-bold">Limite disponivel</span>
+                  <span className="font-bold">Limite disponível</span>
                 </div>
                 <div>
                   <span className="font-bold text-indigo-500">R$ 600,00</span>

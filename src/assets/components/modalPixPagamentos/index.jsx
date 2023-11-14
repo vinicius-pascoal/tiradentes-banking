@@ -12,7 +12,7 @@ export default function modalPixPagamentos({ children }) {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        pagar
+        Pagar
       </Button>
 
       <Modal show={show} onHide={handleClose}>
@@ -22,14 +22,14 @@ export default function modalPixPagamentos({ children }) {
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Chave pix</Form.Label>
+              <Form.Label>Chave Pix</Form.Label>
               <Form.Control type="text" placeholder="***.***.***." autoFocus />
             </Form.Group>
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>valor</Form.Label>
+              <Form.Label>Valor</Form.Label>
               <Form.Control type="text" autoFocus />
             </Form.Group>
           </Form>
