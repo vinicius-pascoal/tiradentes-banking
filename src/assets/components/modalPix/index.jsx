@@ -19,7 +19,7 @@ export default function modalPix({ tipo }) {
         </Button>
       ) : (
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Button className=" text-white" variant="" onClick={handleShow}>
+          <Button className="nav-link text-white fs-5" variant="" onClick={handleShow}>
             <i className="fs-4 bi bi-x-diamond-fill"></i>
             <span className="ms-2">Pix</span>
           </Button>

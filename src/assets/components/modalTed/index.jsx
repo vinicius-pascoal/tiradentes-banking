@@ -16,24 +16,24 @@ export default function Example({ tipo }) {
           <i className="fs-4 bi bi-credit-card"></i>
         </Button>
       ) : (
-        <Button className=" text-white" variant="" onClick={handleShow}>
+        <Button className="nav-link text-white fs-5" variant="" onClick={handleShow}>
           <i className="fs-4 bi bi-credit-card"></i>
-          <span className="ms-2">Cartão</span>
+          <span className="ms-2">Transferir</span>
         </Button>
       )}
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Transferencia</Modal.Title>
+          <Modal.Title>Transferir</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>conta bancaria</Form.Label>
+              <Form.Label>Conta Bancária</Form.Label>
               <Form.Control type="text" autoFocus />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Agencia</Form.Label>
+              <Form.Label>Agência</Form.Label>
               <Form.Control type="text" autoFocus />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -42,17 +42,13 @@ export default function Example({ tipo }) {
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Valor</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="insira o valor da transferencia"
-                autoFocus
-              />
+              <Form.Control type="text" autoFocus />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            Fechar
           </Button>
           <Button variant="primary" onClick={handleClose}>
             Confirmar

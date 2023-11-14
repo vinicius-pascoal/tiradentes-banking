@@ -27,7 +27,7 @@ export default function modalPixReceber({ children }) {
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>valor</Form.Label>
+              <Form.Label>Valor</Form.Label>
               <Form.Control type="text" autoFocus />
             </Form.Group>
           </Form>
