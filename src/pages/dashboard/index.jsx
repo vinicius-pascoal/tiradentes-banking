@@ -1,15 +1,15 @@
 import CreditCard from "../../assets/components/CreditCard";
 import CircularProgress from "../../assets/components/CircularProgress";
-import ModalPix from "../../assets/components/modalPix";
+import ModalPix from "../../assets/components/ModalPix";
 import ModalTed from "../../assets/components/modalTed";
 
 import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   return (
-    <div className="flex justify-center mt-56">
+    <div className="flex justify-center mt-56 bashboardResponsive">
       <CreditCard />
-      <div className="flex bg-white p-4 rounded-xl w-auto mx-28">
+      <div className="flex bg-white p-4 rounded-xl w-fit mx-28  bashboardResponsive ">
         <div>
           <h1>Meu Cartão</h1>
           <div>
