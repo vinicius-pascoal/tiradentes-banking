@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
 
 import logo from "../../imgs/dashboard/Logo.png";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 
-import ModalPix from "../modalPix";
+import ModalPix from "../ModalPix";
 import ModalTed from "../modalTed";
 
 export default function Sidebar() {
   return (
-    <div className="sideBarFundo col-auto min-vh-100 d-flex flex-column align-items-center">
+    <div className="sideBarFundo col-auto min-vh-100 d-flex flex-column justify-between">
       <div className="text-decoration-none text-white d-flex align-items-center">
         <img
           src={logo}
@@ -18,7 +16,7 @@ export default function Sidebar() {
           style={{ maxWidth: "100px" }}
         />
       </div>
-      <ul className="nav nav-pills flex-column">
+      <ul className="nav nav-pills flex-column flex-grow">
         <li className="nav-item text-white fs-4 d-flex align-items-center">
           <Link
             to="/dashboard"
@@ -29,22 +27,14 @@ export default function Sidebar() {
             <span className="ms-2">Dashboard</span>
           </Link>
         </li>
-
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <ModalTed />
-        </li>
-        <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link
-            to="/academico"
-            className="nav-link text-white fs-5"
-            aria-current="page"
-          >
-            <i className="fs-4 bi bi-mortarboard"></i>
-            <span className="ms-2">Acadêmico</span>
+          <Link to="/perfil" className="nav-link text-white fs-5" aria-current="page">
+            <i className="fs-4 bi bi-gear"></i>
+            <span className="ms-2">Perfil</span>
           </Link>
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <ModalPix />
+          <ModalTed />
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
           <Link
@@ -52,25 +42,28 @@ export default function Sidebar() {
             className="nav-link text-white fs-5"
             aria-current="page"
           >
-            <i className="fs-4 bi bi-arrows-expand"></i>
+            {/* <AiOutlineExpand className="fs-4" /> */}
             <span className="ms-2">Movimentações</span>
           </Link>
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link
-            to="/sac"
-            className="nav-link text-white fs-5"
-            aria-current="page"
-          >
-            <i className="fs-4 bi bi-headset"></i>
+          <Link to="/sac" className="nav-link text-white fs-5" aria-current="page">
+            {/* <BiHeadset className="fs-4" /> */}
             <span className="ms-2">Suporte</span>
           </Link>
         </li>
         <li className="nav-item text-white fs-4 d-flex align-items-center">
-          <Link to="#" className="nav-link text-white fs-5" aria-current="page">
-            <i className="fs-4 bi bi-gear"></i>
-            <span className="ms-2">Configurações</span>
+          <Link
+            to="/academico"
+            className="nav-link text-white fs-5"
+            aria-current="page"
+          >
+            {/* <BiMortarboard className="fs-4" /> */}
+            <span className="ms-2">Acadêmico</span>
           </Link>
+        </li>
+        <li className="nav-item text-white fs-4 d-flex align-items-center">
+          <ModalPix />
         </li>
       </ul>
     </div>

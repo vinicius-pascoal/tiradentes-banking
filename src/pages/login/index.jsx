@@ -28,6 +28,7 @@ function Login({ setLogged }) {
   const errors = {
     uname: "invalid username",
     pass: "invalid password",
+    auth: "invalid username or password",
   };
 
   const handleSubmit = (event) => {
@@ -37,13 +38,13 @@ function Login({ setLogged }) {
 
     if (userData) {
       if (userData.password !== password) {
-        setErrorMessages({ name: "pass", message: errors.pass });
+        setErrorMessages({ name: "auth", message: errors.auth });
       } else {
         setLogged(true);
         goTo("/dashboard");
       }
     } else {
-      setErrorMessages({ name: "uname", message: errors.uname });
+      setErrorMessages({ name: "auth", message: errors.auth });
     }
   };
 
@@ -55,14 +56,29 @@ function Login({ setLogged }) {
   return (
     <BaseLogin>
       <form className="formularioLogin" onSubmit={handleSubmit}>
-        <input type="text" name="uname" placeholder="Usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <div className="errorContainer flex justify-center"> {/* Added flex and justify-center classes */}
+          {renderErrorMessage("auth")}
+        </div>
+        <input
+          type="text"
+          name="uname"
+          placeholder="Usuario"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
         {renderErrorMessage("uname")}
-        <input type="password" name="pass" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input
+          type="password"
+          name="pass"
+          placeholder="Senha"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         {renderErrorMessage("pass")}
         <button type="submit">Login</button>
         <div className="loginLinks">
           <Link to="/criarConta">criar conta</Link>
-          <Link to="/RecuperarConta">Recuperar senha</Link>
+          <Link to="/recuperarConta">Recuperar senha</Link>
         </div>
       </form>
     </BaseLogin>

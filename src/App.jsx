@@ -15,6 +15,7 @@ import {
   Routes,
 } from "react-router-dom";
 import { useState } from "react";
+import Perfil from "./pages/perfil";
 
 function App() {
   const [logged, setLogged] = useState(false);
@@ -27,19 +28,20 @@ function App() {
             <Route path="/" element={<Login setLogged={setLogged} />} />
             <Route path="/criarConta" element={<CriarConta />} />
             <Route path="/recuperarConta" element={<RecuperarConta />} />
-          </Routes>
-          {logged ? (
-            <BaseSite>
-              <Routes>
+            <Route element={<BaseSite />}>
+              {logged ? (<>
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/sac" element={<Sac />} />
                 <Route path="/academico" element={<Academico />} />
                 <Route path="/movimentacoes" element={<Movimentacoaes />} />
-              </Routes>
-            </BaseSite>
-          ) : (
-            <Navigate to="/" />
-          )}
+                <Route path="/perfil" element={<Perfil />} />
+              </>) : <></>}
+            </Route>
+            <Route
+              path="*"
+              element={<Navigate to="/" replace />}
+            />
+          </Routes>
         </div>
       </Router>
     </div>
