@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import browserslistToEsbuild from "browserslist-to-esbuild";
 
 export default defineConfig({
-  base: "/tiradentes-banking",
+  base: "/",
   plugins: [react()],
   build: {
     target: browserslistToEsbuild(),
