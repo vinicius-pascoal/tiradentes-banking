@@ -1,11 +1,13 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import ModalPixPagamentos from "../modalPixPagamentos";
+
+import PropTypes from 'prop-types';
+
+import ModalPixPagamentos from "../ModalPixPagamentos";
 import ModalPixReceber from "../modalPixReceber";
 
-export default function modalPix({ tipo }) {
+export default function ModalPix({ tipo }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -43,3 +45,7 @@ export default function modalPix({ tipo }) {
     </>
   );
 }
+
+ModalPix.propTypes = {
+  tipo: PropTypes.string.isRequired,
+};

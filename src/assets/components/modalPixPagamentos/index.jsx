@@ -3,11 +3,26 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-export default function modalPixPagamentos({ children }) {
+import ModalPixConfirm from "../ModalPixConfirm";
+
+export default function ModalPixPagamentos() {
   const [show, setShow] = useState(false);
+  const [valor, setValor] = useState("10");
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const [awaitConfirm, setAwaitConfirm] = useState(false);
+
+  const handleConfirm = () => {
+    setAwaitConfirm(false);
+    handleClose();
+  };
+
+  const handleCancel = () => {
+    setAwaitConfirm(false);
+    handleClose();
+  };
 
   return (
     <>
@@ -33,12 +48,18 @@ export default function modalPixPagamentos({ children }) {
               <Form.Control type="text" autoFocus />
             </Form.Group>
           </Form>
+          <ModalPixConfirm
+            valor={valor}
+            show={awaitConfirm}
+            onCancel={handleCancel}
+            onConfirm={handleConfirm}
+          />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Sair
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={() => setAwaitConfirm(true)}>
             Pagar
           </Button>
         </Modal.Footer>

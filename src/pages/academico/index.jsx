@@ -2,7 +2,7 @@ import propaganda from "../../assets/imgs/academico/propaganda.webp";
 
 export default function academico() {
   return (
-    <div className="financeScream bashboardResponsive">
+    <div className="financeScream bashboardResponsive mt-20">
       <div className="financeBox h-max">
         <h2>Opções de financiamento e descontos</h2>
         <div className="flex justify-center">

@@ -7,6 +7,7 @@ import ModalPixConfirm from "../ModalPixConfirm";
 
 export default function ModalPixPagamentos() {
   const [show, setShow] = useState(false);
+  const [valor, setValor] = useState("10");
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -16,12 +17,12 @@ export default function ModalPixPagamentos() {
   const handleConfirm = () => {
     setAwaitConfirm(false);
     handleClose();
-  }
+  };
 
   const handleCancel = () => {
     setAwaitConfirm(false);
     handleClose();
-  }
+  };
 
   return (
     <>
@@ -47,7 +48,12 @@ export default function ModalPixPagamentos() {
               <Form.Control type="text" autoFocus />
             </Form.Group>
           </Form>
-          <ModalPixConfirm show={awaitConfirm} onCancel={handleCancel} onConfirm={handleConfirm} />
+          <ModalPixConfirm
+            valor={valor}
+            show={awaitConfirm}
+            onCancel={handleCancel}
+            onConfirm={handleConfirm}
+          />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
