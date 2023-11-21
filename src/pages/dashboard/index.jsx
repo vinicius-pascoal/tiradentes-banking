@@ -9,15 +9,15 @@ export default function Dashboard() {
   return (
     <div className="flex justify-center mt-56 bashboardResponsive">
       <CreditCard />
-      <div className="flex bg-white p-4 rounded-xl w-fit mx-28  bashboardResponsive ">
+      <div className="flex bg-white p-4 rounded-xl w-fit mx-28 bashboardResponsive ">
         <div>
           <h1>Meu Cartão</h1>
           <div>
             <CircularProgress progress={68} />
           </div>
         </div>
-        <div className="flex-col flex justify-around">
-          <div className="ml-28 flex justify-between flex-col">
+        <div className="flex-col flex justify-around ">
+          <div className="ml-28 flex justify-between flex-col responsiveDCard">
             <div>
               <div className="flex justify-between">
                 <div>

@@ -239,6 +239,10 @@
     left: 25%;
     color: white;
   }
+  
+  .responsiveDCard{
+    margin: 0 !important;
+  }
 }
 
 /* Estilos para telas maiores */

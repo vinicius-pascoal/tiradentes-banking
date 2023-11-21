@@ -28,12 +28,11 @@ const Perfil = () => {
   };
 
   const handleSave = () => {
-    // Lógica para salvar os dados do perfil
     console.log("Dados do perfil salvos:", { nome, email, telefone, endereco });
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 bg-white rounded-md m-20">
       <h1 className="text-2xl font-bold mb-4">Perfil</h1>
       <Form>
         <Form.Group controlId="formNome">
@@ -72,7 +71,7 @@ const Perfil = () => {
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Button variant="primary" onClick={handleSave}>
+        <Button className="mt-4 " variant="primary" onClick={handleSave}>
           Salvar
         </Button>
       </Form>
