@@ -22,11 +22,11 @@ export default function ModalPixConfirm({
         <h5>{valor}</h5>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="success" onClick={onConfirm}>
-          Confirmar
-        </Button>
         <Button variant="secondary" onClick={onCancel}>
           Sair
+        </Button>
+        <Button variant="success" onClick={onConfirm}>
+          Confirmar
         </Button>
       </Modal.Footer>
     </Modal>

@@ -26,7 +26,7 @@ const CreditCard = ({
       <div className="absolute bottom-4 left-4 text-white text-sm">
         {showValues ? expiration : "01/29"}
       </div>
-      <div className="absolute bottom-4 right-4 text-white text-sm">
+      <div className="absolute bottom-14 right-4 text-white text-sm">
         {showValues ? cvv : "656"}
       </div>
       <button
