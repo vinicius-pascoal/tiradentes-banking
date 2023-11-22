@@ -22,27 +22,26 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
-        <div>
-          <Routes>
-            <Route path="/" element={<Login setLogged={setLogged} />} />
-            <Route path="/criarConta" element={<CriarConta />} />
-            <Route path="/recuperarConta" element={<RecuperarConta />} />
-            <Route element={<BaseSite />}>
-              {logged ? (<>
+      <Router basename="/tiradentes-banking">
+        <Routes>
+          <Route path="/" element={<Login setLogged={setLogged} />} />
+          <Route path="/criarConta" element={<CriarConta />} />
+          <Route path="/recuperarConta" element={<RecuperarConta />} />
+          <Route element={<BaseSite />}>
+            {logged ? (
+              <>
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/sac" element={<Sac />} />
                 <Route path="/academico" element={<Academico />} />
                 <Route path="/movimentacoes" element={<Movimentacoaes />} />
                 <Route path="/perfil" element={<Perfil />} />
-              </>) : <></>}
-            </Route>
-            <Route
-              path="*"
-              element={<Navigate to="/" replace />}
-            />
-          </Routes>
-        </div>
+              </>
+            ) : (
+              <></>
+            )}
+          </Route>
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
       </Router>
     </div>
   );

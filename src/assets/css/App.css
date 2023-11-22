@@ -137,7 +137,7 @@
 @font-face {
   font-family: "Neo Sans Pro Bold";
   src: local("Neo Sans Pro Bold"),
-    url("../fonts/Neo\ Sans\ Pro\ Bold.ttf") format("ttf");
+    url("../fonts/NeoSansProBold.ttf") format("ttf");
 }
 
 .sideBarFundo {
