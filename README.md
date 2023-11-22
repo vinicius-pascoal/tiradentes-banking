@@ -1,1 +1,0 @@
-# tiradentes-banking
