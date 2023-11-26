@@ -99,6 +99,16 @@ export default function BaseSite() {
               <i className="fs-4 bi bi-headset"></i>
               <span className="ms-2">Suporte</span>
             </Link>
+          </li>{" "}
+          <li className="nav-item text-white fs-4 d-flex align-items-center">
+            <Link
+              to="/"
+              className="nav-link text-white fs-5"
+              aria-current="page"
+            >
+              <i class="fs-4 bi bi-box-arrow-left"></i>
+              <span className="ms-2">Sair</span>
+            </Link>
           </li>
         </ul>
       </div>
