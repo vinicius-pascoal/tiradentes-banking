@@ -12,7 +12,7 @@ export default function RecuperarConta() {
           replacement={{ _: /\d/ }}
           placeholder="insira seu CPF"/>
         {/* <input type="text" placeholder="insira seu CPF" /> */}
-        <button onClick={goTo("/")}>recuperar senha</button>
+        <button onClick={goTo("/")}>Recuperar senha</button>
       </form>
     </BaseLogin>
   );

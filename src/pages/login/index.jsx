@@ -76,9 +76,9 @@ function Login({ setLogged }) {
         />
         {renderErrorMessage("pass")}
         <button type="submit">Login</button>
-        <div className="loginLinks">
-          <Link to="/criarConta">criar conta</Link>
-          <Link to="/recuperarConta">Recuperar senha</Link>
+        <div className="loginLinks"> 
+          <Link to="/criarConta">Criar Conta</Link>
+          <Link to="/recuperarConta">Recuperar Senha</Link>
         </div>
       </form>
     </BaseLogin>
