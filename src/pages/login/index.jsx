@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BaseLogin from "../../assets/components/baseLogin";
 import { useNavigate, Link } from "react-router-dom";
-import { InputMask } from '@react-input/mask';
+import { InputMask } from "@react-input/mask";
 
 import PropTypes from "prop-types";
 
@@ -13,15 +13,15 @@ function Login({ setLogged }) {
   const goTo = useNavigate();
   const database = [
     {
-      username: "user1",
+      username: "999-999-999-99",
       password: "pass1",
     },
     {
-      username: "user2",
+      username: "222-222-222-22",
       password: "pass2",
     },
     {
-      username: "user3",
+      username: "333-333-333-33",
       password: "pass3",
     },
   ];
@@ -57,14 +57,18 @@ function Login({ setLogged }) {
   return (
     <BaseLogin>
       <form className="formularioLogin" onSubmit={handleSubmit}>
-        <div className="errorContainer flex justify-center"> {/* Added flex and justify-center classes */}
+        <div className="errorContainer flex justify-center">
+          {" "}
+          {/* Added flex and justify-center classes */}
           {renderErrorMessage("auth")}
         </div>
-        <InputMask mask="___-___-___-__"
-          replacement={{ _:/\d/ }}
+        <InputMask
+          mask="___-___-___-__"
+          replacement={{ _: /\d/ }}
           placeholder="Insira seu CPF"
           value={username}
-          onChange={(e) => setUsername(e.target.value)}/>
+          onChange={(e) => setUsername(e.target.value)}
+        />
         {/* <input
           type="text"
           name="uname"
@@ -82,7 +86,7 @@ function Login({ setLogged }) {
         />
         {renderErrorMessage("pass")}
         <button type="submit">Login</button>
-        <div className="loginLinks"> 
+        <div className="loginLinks">
           <Link to="/criarConta">Criar Conta</Link>
           <Link to="/recuperarConta">Recuperar Senha</Link>
         </div>
