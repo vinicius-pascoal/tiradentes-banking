@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BaseLogin from "../../assets/components/baseLogin";
 import { useNavigate, Link } from "react-router-dom";
+import { InputMask } from '@react-input/mask';
 
 import PropTypes from "prop-types";
 
@@ -59,13 +60,18 @@ function Login({ setLogged }) {
         <div className="errorContainer flex justify-center"> {/* Added flex and justify-center classes */}
           {renderErrorMessage("auth")}
         </div>
-        <input
+        <InputMask mask="___-___-___-__"
+          replacement={{ _:/\d/ }}
+          placeholder="Insira seu CPF"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}/>
+        {/* <input
           type="text"
           name="uname"
-          placeholder="Usuario"
+          placeholder="Usuário"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-        />
+        /> */}
         {renderErrorMessage("uname")}
         <input
           type="password"
@@ -76,9 +82,9 @@ function Login({ setLogged }) {
         />
         {renderErrorMessage("pass")}
         <button type="submit">Login</button>
-        <div className="loginLinks">
-          <Link to="/criarConta">criar conta</Link>
-          <Link to="/recuperarConta">Recuperar senha</Link>
+        <div className="loginLinks"> 
+          <Link to="/criarConta">Criar Conta</Link>
+          <Link to="/recuperarConta">Recuperar Senha</Link>
         </div>
       </form>
     </BaseLogin>
