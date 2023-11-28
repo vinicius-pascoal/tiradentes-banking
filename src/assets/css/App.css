@@ -190,6 +190,11 @@
   background-image: url(../imgs/dashboard/cardBackground.jpg);
 }
 
+.nav-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 /* Estilos para dispositivos móveis */
 @media screen and (max-width: 768px) {
   .menu-btn {
