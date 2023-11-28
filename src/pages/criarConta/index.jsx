@@ -1,11 +1,15 @@
 import BaseLogin from "../../assets/components/baseLogin";
+import { InputMask } from '@react-input/mask';
 
 function CriarConta() {
   return (
     <BaseLogin>
       <form className="formularioLogin">
-        <input type="text" placeholder="insira seu CPF" />
-        <input type="text" placeholder="insira sua senha" />
+      <InputMask mask="___.___.___-__"
+          replacement={{ _: /\d/ }}
+          placeholder="Insira seu CPF"/>
+        <input type="text" placeholder="Insira seu CPF" />
+        <input type="text" placeholder="Insira sua senha" />
         <button>criar conta</button>
       </form>
     </BaseLogin>

@@ -13,7 +13,7 @@ function Login({ setLogged }) {
   const goTo = useNavigate();
   const database = [
     {
-      username: "999-999-999-99",
+      username: "999.999.999-99",
       password: "pass1",
     },
     {
@@ -63,7 +63,7 @@ function Login({ setLogged }) {
           {renderErrorMessage("auth")}
         </div>
         <InputMask
-          mask="___-___-___-__"
+          mask="___.___.___-__"
           replacement={{ _: /\d/ }}
           placeholder="Insira seu CPF"
           value={username}
