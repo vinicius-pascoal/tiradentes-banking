@@ -44,4 +44,7 @@ O site exibe um histórico detalhado de transações, incluindo depósitos, reti
 
    # 4. Iniciar o servidor de desenvolvimento
    npm run dev
+
+   # 5. Usuario(999.999.999-99)
+        Senha(pass1)
    ```
